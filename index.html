@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PortfolioHub</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+<header id="header">
+  <div id="logo">PortfolioHub</div>
+  <label id="mobile-menu-icon" for="menu-toggle"><i class="ri-menu-line"></i></label>
+  <input type="checkbox" id="menu-toggle" hidden />
+  <nav id="navbar">
+    <a id="home" href="index.html">Home</a>
+    <a id="profile" href="/profile/profile.html">Profile</a>
+    <a id="showcase" href="showcase/showcase.html">Showcase</a>
+    <a id="signup" href="signup/signup.html">Sign Up</a>
+    <a id="login" href="login/login.html">Login</a>
+  </nav>
+</header>
+
+
+  <section id="hero" class="fade-in">
+    <div id="left-content">
+      <h1 id="main-heading">Elevate Your Career<br>with PortfolioHub</h1>
+      <p id="description">
+        Welcome to PortfolioHub, where professionals like you can display your projects in a captivating way.
+        Our platform blends creativity with functionality, helping you stand out in a competitive job market.
+      </p>
+    </div>
+    <div id="right-content">
+      <img id="dashboard-img" src="resources/image.png" alt="Dashboard">
+      <div id="sidebar">
+        <a id="my-projects" href="profile/profile.html">Portfolio</a>
+        <a id="networking" href="dashboard/dashboard.html">Dashboard</a>
+        <a id="contactus" href="contact/contact.html">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <hr id="divider">
+
+  <section id="social-icons">
+    <div class="social" id="dribbble">Dribbble</div>
+    <div class="social" id="linkedin">LinkedIn</div>
+    <div class="social" id="behance">Behance</div>
+    <div class="social" id="github">GitHub</div>
+    <div class="social" id="notion">Notion</div>
+  </section>
+
+
+  <div id="portfolio-container">
+    <div id="portfolio-profiles">
+      <div class="portfolio-card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Lauren">
+        <div class="portfolio-details">
+          <h4>Full stack developer</h4>
+          <h2>I am Lauren Simth</h2>
+          <p>I am a full stack developer skilled in building end-to-end web applications...</p>
+         
+          <div class="portfolio-buttons">
+            <button>View Certificate</button>
+            <button>View Portfolio</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Akumma">
+        <div class="portfolio-details">
+          <h4>Product Designer</h4>
+          <h2>I am Akumma</h2>
+          <p>My process involves research, ideation, prototyping, and testing...</p>
+        
+          <div class="portfolio-buttons">
+            <button>View Certificate</button>
+            <button>View Portfolio</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Isabell">
+        <div class="portfolio-details">
+          <h4>Data Scientist</h4>
+          <h2>I am Isabell Parker</h2>
+          <p>I am a data scientist passionate about transforming raw data into insights...</p>
+          
+          <div class="portfolio-buttons">
+            <button>View Certificate</button>
+            <button>View Portfolio</button>
+          </div>
+        </div>
+      </div>
+
+      <p id="portfolio-footer">See more profiles</p>
+    </div>
+
+    <aside id="portfolio-filter">
+      <h3>Filter</h3>
+      <div>
+        <strong>Skills</strong>
+        <label><input type="checkbox"> Javascript</label>
+        <label><input type="checkbox"> UX/UI</label>
+        <label><input type="checkbox"> Python</label>
+      </div>
+      <div style="margin-top: 20px;">
+        <strong>Project type</strong>
+        <label><input type="radio" name="project"> Part time</label>
+        <label><input type="radio" name="project"> Full time</label>
+        <label><input type="radio" name="project"> Freelancer</label>
+      </div>
+      <div style="margin-top: 20px;">
+        <strong>Locations</strong>
+        <label><input type="checkbox"> Onsite</label>
+        <label><input type="checkbox"> Remote</label>
+      </div>
+    </aside>
+  </div>
+</section>
+
+
+<section id="provide-section" class="fade-in">
+  <h2 id="provide-heading">What We Provide</h2>
+  <button id="see-more-btn">See More</button>
+
+  <div id="provide-grid">
+    <div id="provide-left">
+      <div id="row1">
+        <span id="num1">01</span><hr id="line1"><span id="text1">Project</span>
+      </div>
+      <div id="row2">
+        <span id="num3">3</span><hr id="line2"><span id="text3">User Profiles</span>
+      </div>
+      <div id="row3">
+        <span id="num5">5</span><hr id="line3"><span id="text5">Career</span>
+      </div>
+    </div>
+
+    <div id="provide-right">
+      <div id="row4">
+        <span id="num2">2</span><hr id="line4"><span id="text2">Networking</span>
+      </div>
+      <div id="row5">
+        <span id="num4">4</span><hr id="line5"><span id="text4">Feedback</span>
+      </div>
+      <div id="row6">
+        <span id="num6">6</span><hr id="line6"><span id="text6">Visual</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="highlighted-section" class="fade-in">
+  <h2 id="highlighted-heading">Highlighted Projects</h2>
+
+  <div id="highlighted-tags">
+    <span id="tag1">New</span>
+    <span id="tag2">Showcase</span>
+    <span id="tag3">Networking</span>
+    <span id="tag4">Projects</span>
+    <span id="tag5">Design</span>
+  </div>
+
+  <div id="project-cards">
+    <div id="card1" class="project-card">
+      <img src="https://cdn.cosmos.so/5ad23df1-a626-48ab-b969-976b13eae09b?format=jpeg" alt="Creative Portfolio" />
+      <h3 id="title1">Creative Portfolio Example</h3>
+      <button id="btn1">Learn More</button>
+    </div>
+
+    <div id="card2" class="project-card">
+      <img src="https://cdn.cosmos.so/f8f04263-bc72-4929-b569-8053bbf835c1?format=jpeg" alt="Professional" />
+      <h3 id="title2">Professional</h3>
+      <button id="btn2">Learn More</button>
+    </div>
+
+    <div id="card3" class="project-card">
+      <img src="https://cdn.cosmos.so/473a929f-b686-4e5d-bedf-cc066a05bd05?format=jpeg" alt="Architectural" />
+      <h3 id="title3">Architectural</h3>
+      <button id="btn3">Learn More</button>
+    </div>
+
+    <div id="card4" class="project-card">
+      <img src="https://cdn.cosmos.so/d8f84359-4186-4034-a357-fe981cea6f75?format=jpeg" alt="Travel" />
+      <h3 id="title4">Travel</h3>
+      <button id="btn4">Learn More</button>
+    </div>
+
+    <div id="card5" class="project-card">
+      <img src="https://cdn.cosmos.so/faa10ec9-5599-4197-b7bd-2dee543a44a9?format=jpeg" alt="Dashboard" />
+      <h3 id="title5">Project Analysis Dashboard</h3>
+      <button id="btn5">Learn More</button>
+    </div>
+  </div>
+
+  <div id="explore-wrapper">
+    <button id="explore-btn">Explore All Projects</button>
+  </div>
+</section>
+
+<section id="testimonials-section" class="fade-in">
+  <h2 id="testimonials-heading">Testimonials</h2>
+
+  <div id="testimonials-wrapper">
+    <div id="testimonial1" class="testimonial-card">
+      <img src="https://i.pinimg.com/736x/ed/ab/e5/edabe5a42b4edc99637bcb4e513fa9b7.jpg" alt="Alex Morgan" />
+      <strong>Alex Morgan</strong>
+      <p>Creative Director</p>
+      <p>"PortfolioHub transformed my career!"</p>
+    </div>
+
+    <div id="testimonial2" class="testimonial-card">
+      <img src="https://i.pinimg.com/736x/2e/be/72/2ebe72a4349858c0f115184ae73503e1.jpg" alt="Jordan Smith" />
+      <strong>Jordan Smith</strong>
+      <p>Freelance Designer</p>
+      <p>"A game-changer for showcasing work."</p>
+    </div>
+
+    <div id="testimonial3" class="testimonial-card">
+      <img src="https://i.pinimg.com/736x/9f/f7/34/9ff734f63d7f8ed763be97516eabd33c.jpg" alt="Taylor Johnson" />
+      <strong>Taylor Johnson</strong>
+      <p>Project Manager</p>
+      <p>"Essential for networking and growth!"</p>
+    </div>
+  </div>
+
+  <div id="viewall-wrapper">
+    <button id="viewall-btn">View All</button>
+  </div>
+</section>
+
+<footer id="main-footer" class="fade-in">
+  <div id="footer-left">
+    <h3 id="footer-brand">PortfolioHub.</h3>
+    <p id="footer-tagline"><strong>Showcasing Your Talent.</strong></p>
+    <div id="footer-social">
+      <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+      <a href="#"><i class="ri-behance-fill"></i></a>
+      <a href="#"><i class="ri-twitter-fill"></i></a>
+    </div>
+  </div>
+
+  <div id="footer-right">
+    <div id="footer-links-1">
+      <a href="index.html">Home</a>
+      <a href="showcase/showcase.html">Showcase</a>
+      <a href="#">Projects</a>
+      <a href="#">Careers</a>
+      <a href="contact/contact.html">Contact us</a>
+    </div>
+    <div id="footer-links-2">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Copyright</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

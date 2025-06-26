@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar animate-slidein">
+      <h2>Dashboard</h2>
+      <nav>
+        <ul>
+          <li class="active"><i class="fas fa-home"></i>Home</li>
+          <li>
+            <i class="fas fa-folder"></i> Projects <span class="arrow">›</span>
+            <ul class="submenu">
+              <li>Overview</li>
+              <li><a href="../showcase/showcase.html">Showcase</a></li>
+              <li>Connections</li>
+              <li>Feedback</li>
+            </ul>
+          </li>
+          <li>
+            <i class="fas fa-chart-bar"></i> Analytics <span class="arrow">›</span>
+            <ul class="submenu">
+              <li>Portfolio</li>
+              <li>New project alert</li>
+              <li>Updates</li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content animate-fadein">
+      <header class="topbar">
+        <input type="text" placeholder="Search projects" />
+        <button class="btn-add">Add</button>
+        <div class="icons">
+          <i class="fas fa-comment-dots"></i>
+          <i class="fas fa-bell"></i>
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" />
+        </div>
+      </header>
+
+      <section class="notifications">
+        <div class="noti-box">
+          <div class="noti-header">
+            <h2>Notifications</h2>
+            <select class="tag">
+              <option>This month</option>
+              <option>This week</option>
+              <option>Today</option>
+            </select>
+          </div>
+
+          <div class="noti-item animate-fadeup">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Jordan" />
+            <div>
+              <strong>Jordan Smith</strong><br><br>
+              on Project - Urban Design<br><br>
+              <small>Great work, keep it up!</small><br><br>
+              <a href="#">Like</a> · <a href="#">Reply</a>
+            </div>
+            <span class="dot"></span>
+            <small>2h</small>
+          </div>
+
+          <div class="noti-item animate-fadeup delay">
+            <img src="https://randomuser.me/api/portraits/women/46.jpg" alt="Maria" />
+            <div>
+              <strong>Maria Johnson</strong><br><br>
+              on Project - Web App<br><br>
+              <small>Impressive design, love it!</small><br><br>
+              <a href="#">Like</a> · <a href="#">Reply</a>
+            </div>
+            <span class="dot"></span>
+            <small>3h</small>
+          </div>
+        </div>
+
+        <aside class="sort-box animate-slideup">
+          <h4>Sort By</h4>
+          <ul>
+            <li><input type="checkbox" checked> Comments</li>
+            <li><input type="checkbox" checked> Likes</li>
+            <li><input type="checkbox" checked> Updates</li>
+            <li><input type="checkbox" checked> Mentions</li>
+            <li><input type="checkbox" checked> Projects</li>
+            <li><input type="checkbox" checked> Messages</li>
+          </ul>
+          <div class="sort-buttons">
+            <button class="select-all">Select all</button>
+            <button class="deselect-all">Deselect all</button>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    // Scroll animations
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.animate-slidein, .animate-fadein, .animate-fadeup, .animate-slideup')
+      .forEach(el => observer.observe(el));
+
+    // Sidebar toggle for submenu
+    document.querySelectorAll('.sidebar li').forEach(item => {
+      item.addEventListener('click', () => {
+        if (item.querySelector('.submenu')) {
+          item.classList.toggle('open');
+        }
+      });
+    });
+
+    // Select / Deselect all buttons
+    document.querySelector('.select-all').addEventListener('click', () => {
+      document.querySelectorAll('.sort-box input[type="checkbox"]').forEach(cb => cb.checked = true);
+    });
+
+    document.querySelector('.deselect-all').addEventListener('click', () => {
+      document.querySelectorAll('.sort-box input[type="checkbox"]').forEach(cb => cb.checked = false);
+    });
+  </script>
+</body>
+</html>
