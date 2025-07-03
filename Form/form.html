@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Skill Editor</title>
+
+  <!-- Font Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="form.css"/>
+
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="/index.html">PortfolioHub</a>
+    </div>
+    <div class="note">📌 This is the resume employers will see when you apply. Please make sure it is up to date.</div>
+  </header>
+
+  <div class="container">
+
+    <!-- Profile Section -->
+    <div class="top-box" data-aos="fade-down">
+      <div class="profile-image">
+        <img src="Screenshot 2025-06-27 193429.png" alt="Profile" />
+        <span class="icon edit" id="triggerUpload"><i class="fas fa-pen"></i></span>
+        <input type="file" id="photoUpload" style="display: none;" accept="image/*" />
+        <input type="text" class="name" placeholder="Enter Your Name" />
+      </div>
+      <!-- <a href="#" class="profile-status">Profile 70% Complete</a> -->
+    </div>
+
+    <!-- Role and Skills Section -->
+    <div class="form-box" data-aos="fade-up">
+      <div class="section-header">
+        <input type="text" class="role-title" placeholder="Enter Your Role / Speciality here " />
+      </div>
+
+      <div class="description-box">
+        <textarea id="description" placeholder="Write a detailed description about you " disabled></textarea>
+        <span class="icon pencil" onclick="toggleDescriptionEdit()"><i class="fas fa-pen"></i></span>
+      </div>
+
+      <div class="skills-section">
+        <label>Skills:</label>
+        <div class="skill-inputs" id="skills-container">
+          <div class="skill" data-aos="fade-right" data-aos-delay="100">
+            <input type="text" placeholder="Skill 1.">
+            <span class="icon plus" onclick="addSkill()"><i class="ri-add-circle-line"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="services-section">
+        <label>My Services:</label>
+        <div class="service-inputs" id="services-container">
+          <div class="service" data-aos="fade-left" data-aos-delay="150">
+            <input type="text" placeholder="Service 1.">
+            <span class="icon plus" onclick="addService()"><i class="ri-add-circle-line"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-section" data-aos="fade-up">
+        <h3>Contact Me</h3>
+        <div class="contact-fields">
+          <div class="field-group" data-aos="fade-right" data-aos-delay="200">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Phone Number" maxlength="10" pattern="[0-9]{10}" required>
+          </div>
+          <div class="field-group" data-aos="fade-left" data-aos-delay="250">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="submit-section" data-aos="zoom-in" data-aos-delay="300">
+        <button id="submitBtn" onclick="handleSubmit()">Submit</button>
+        <button id="editBtn" style="display: none;" onclick="enableFormEdit()">Edit Form</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup -->
+  <div id="popupOverlay" class="popup-overlay">
+    <div class="popup-box">
+      <h2>Success!</h2>
+      <p>Form Resume Setup Successful ✅</p>
+      <button onclick="closePopup()">OK</button>
+    </div>
+  </div>
+
+  <!-- JS Scripts -->
+  <script src="form.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
+</body>
+</html>
