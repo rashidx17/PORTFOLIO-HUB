@@ -175,7 +175,7 @@ button:hover {
   .content {
     flex-direction: column;
     padding: 20px;
-    overflow-y: auto;
+    overflow-y: scroll;
   }
 
   .left, .right {
