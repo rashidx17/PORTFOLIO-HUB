@@ -1,0 +1,237 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: url(../resources/form\ bg\ img.jpg) no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .container {
+      width: 850px;
+      background: white;
+      border-radius: 30px;
+      padding: 40px 50px;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+    .steps {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 600;
+      color: #3c29ff;
+    }
+    .steps p:first-child {
+      font-size: 18px;
+      color: #3F37D2;
+    }
+    .step-indicators {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 18px;
+      position: relative;
+    }
+    .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 12px;
+      color: #999;
+      position: relative;
+      z-index: 1;
+    }
+    .step-circle {
+      width: 28px;
+      height: 28px;
+      background-color: #ccc;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    .step.active .step-circle {
+      background-color: #3c29ff;
+    }
+    .step.active {
+      color: #3c29ff;
+      font-weight: bold;
+    }
+    .line {
+      position: absolute;
+      top: 13px;
+      left: 14%;
+      right: 14%;
+      height: 2px;
+      background-color: #ccc;
+      z-index: 0;
+    }
+    .section-title {
+      font-size: 21px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #3c29ff;
+    }
+    .form-group,
+    .form-row,
+    .education-row {
+      margin-bottom: 20px;
+    }
+    input{
+        color: #4038D4;   
+        background: #f2eded;
+        width: 79%;
+        padding: 10px;
+        border-radius: 19px;
+        border: 1px solid #ffffff;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    input::placeholder,
+    .date-fake::placeholder, 
+    textarea::placeholder {
+      color: #4038D4;   
+      opacity: 38%;
+      font-weight: 600;
+      font-size: 13px;
+      padding-left: 8px;
+    }
+   
+    textarea, select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+    label {
+      color: #3F37D2;
+      margin-bottom: 5px;
+      display: block;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    .form-row,
+    .education-row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .form-row > div,
+    .education-row > input {
+      flex: 1 1 45%;
+    }
+
+
+/* Photo Upload  */
+    .photo-upload {
+      position: absolute;
+      right: 50px;
+      top: 242px;
+      text-align: center;
+    }
+    .photo-preview {
+      width: 70px;
+      height: 70px;
+      background: #3c29ff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 8px;
+      box-shadow: 0 0 25px rgba(60, 41, 255, 0.5);
+      overflow: hidden;
+    }
+    .photo-preview img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .photo-upload input[type="file"] {
+      display: none;
+    }
+    .photo-upload label {
+      display: inline-block;
+      background-color: #3c29ff;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+/* Photo upload End */
+
+
+    .gender-options {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .save-btn {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      background-color: #3c29ff;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .save-btn:hover {
+      background-color: #2b1bd9;
+    }
+
+
+/* Start Edu Section  */
+  .education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .education-block {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .education-input {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .education-input input {
+    background: #F2EDED;
+    border-radius: 19px;
+    padding: 10px 14px;
+    border: 1px solid white;
+    font-size: 13px;
+    font-weight: 600;
+    color: #4038D4;
+  }
+
+  .education-input label {
+    margin-bottom: 5px;
+    color: #3F37D2;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  /* Edu Section End */
+
+
+  /* Upload Resume  */
+  
