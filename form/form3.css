@@ -26,6 +26,14 @@ body {
   z-index: 10;
 }
 
+input::placeholder {
+      color: #4038D4;   
+      opacity: 38%;
+      font-weight: 600;
+      font-size: 13px;
+      padding-left: 8px;
+    }
+
 .container {
   width: 850px;
   background: white;
@@ -215,4 +223,68 @@ body {
 
 .save-btn:hover {
   background-color: #2b1bd9;
+}
+
+
+/* Animations  */
+/* Fade-in on page load */
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  animation: fadeSlideIn 0.8s ease-out;
+}
+
+/* Stepper bounce in */
+.step {
+  transform: scale(0.9);
+  opacity: 0;
+  animation: bounceIn 0.4s forwards;
+  animation-delay: 0.4s;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Work blocks fade in with delay */
+.work-block {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.6s ease-out forwards;
+}
+
+.work-block:nth-child(4) { animation-delay: 0.6s; }
+.work-block:nth-child(5) { animation-delay: 0.8s; }
+.work-block:nth-child(6) { animation-delay: 1s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button hover scale */
+.save-btn {
+  transition: all 0.3s ease;
+}
+
+.save-btn:hover {
+  transform: scale(1.03);
 }

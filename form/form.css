@@ -245,8 +245,50 @@
   /* Edu Section End */
 
 
-  /* Upload Resume  */
-  
+/* === Animations === */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+/* Apply fadeInUp animation to container */
+.container {
+  animation: fadeInUp 0.8s ease-out;
+}
 
-  
+/* Smooth transition for input and textarea focus */
+input, textarea, select {
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #3c29ff;
+  box-shadow: 0 0 5px rgba(60, 41, 255, 0.3);
+}
+
+/* Step indicator bounce on active */
+.step-circle {
+  transition: transform 0.3s ease;
+}
+.step.active .step-circle {
+  transform: scale(1.2);
+}
+
+/* Save button hover scale effect */
+.save-btn {
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.save-btn:hover {
+  transform: scale(1.02);
+}
+
+/* Photo preview pop-in animation (on load) */
+.photo-preview {
+  animation: fadeInUp 1s ease-out;
+}
