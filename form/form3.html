@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - My Work</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="form3.css" />
+</head>
+<body>
+  <a href="../index.html" class="brand-heading">PortfolioHub</a>
+
+  <div class="container">
+    <!-- Steps Header -->
+    <div class="steps">
+      <p><strong>Sign up</strong></p>
+      <div class="step-indicators">
+        <div class="line"></div>
+        <div class="step">
+          <div class="step-circle">1</div>
+          Basic Details
+        </div>
+        <div class="step active">
+          <div class="step-circle">2</div>
+          Skill & Experience
+        </div>
+        <div class="step">
+          <div class="step-circle">3</div>
+          Contact Details
+        </div>
+      </div>
+    </div>
+
+    <!-- My Work Section -->
+    <div class="section-title">My Work</div>
+
+    <!-- Work Block 1 -->
+    <div class="work-block">
+      <div class="work-inputs">
+        <div class="input-row">
+          <input type="text" placeholder="ex: UI/UX , Python" />
+          <input type="text" placeholder="Description" />
+        </div>
+        <div class="add-link-wrapper">
+          <img src="https://img.icons8.com/ios-glyphs/20/3c29ff/link.png" alt="link icon" />
+          <input type="text" placeholder="Add Link" />
+        </div>
+      </div>
+      <div class="photo-upload">
+        <label for="photo1">
+          <div class="photo-box" id="preview1">
+            <img src="https://img.icons8.com/ios-filled/24/808080/camera--v1.png" />
+            <span>Add Photo</span>
+          </div>
+        </label>
+        <input type="file" id="photo1" accept="image/*" />
+      </div>
+    </div>
+
+    <!-- Work Block 2 -->
+    <div class="work-block">
+      <div class="work-inputs">
+        <div class="input-row">
+          <input type="text" placeholder="ex: UI/UX , Python" />
+          <input type="text" placeholder="Description" />
+        </div>
+        <div class="add-link-wrapper">
+          <img src="https://img.icons8.com/ios-glyphs/20/3c29ff/link.png" alt="link icon" />
+          <input type="text" placeholder="Add Link" />
+        </div>
+      </div>
+      <div class="photo-upload">
+        <label for="photo2">
+          <div class="photo-box" id="preview2">
+            <img src="https://img.icons8.com/ios-filled/24/808080/camera--v1.png" />
+            <span>Add Photo</span>
+          </div>
+        </label>
+        <input type="file" id="photo2" accept="image/*" />
+      </div>
+    </div>
+
+    <!-- Work Block 3 -->
+    <div class="work-block">
+      <div class="work-inputs">
+        <div class="input-row">
+          <input type="text" placeholder="ex: UI/UX , Python" />
+          <input type="text" placeholder="Description" />
+        </div>
+        <div class="add-link-wrapper">
+          <img src="https://img.icons8.com/ios-glyphs/20/3c29ff/link.png" alt="link icon" />
+          <input type="text" placeholder="Add Link" />
+        </div>
+      </div>
+      <div class="photo-upload">
+        <label for="photo3">
+          <div class="photo-box" id="preview3">
+            <img src="https://img.icons8.com/ios-filled/24/808080/camera--v1.png" />
+            <span>Add Photo</span>
+          </div>
+        </label>
+        <input type="file" id="photo3" accept="image/*" />
+      </div>
+    </div>
+
+    <button class="save-btn" onclick="window.location.href='form4.html';">Save & Continue</button>
+  </div>
+
+  <script src="form3.js"></script>
+</body>
+</html>
