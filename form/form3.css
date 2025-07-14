@@ -288,3 +288,153 @@ input::placeholder {
 .save-btn:hover {
   transform: scale(1.03);
 }
+
+
+
+/* === Responsive Media Queries for form3 === */
+
+/* 1024px and below */
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .input-row {
+    flex-direction: column;
+  }
+}
+
+/* 850px and below */
+@media (max-width: 850px) {
+  .work-block {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .step-indicators {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .photo-upload {
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .brand-heading {
+    font-size: 18px;
+    top: 12px;
+    left: 12px;
+  }
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+  .container {
+    padding: 25px;
+  }
+
+  .step-circle {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
+
+  .section-title {
+    font-size: 18px;
+    margin: 20px 0 15px;
+  }
+
+  .line {
+    left: 10%;
+    right: 10%;
+  }
+}
+
+/* 600px and below */
+@media (max-width: 600px) {
+  .step-indicators {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .save-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+/* 431px and below */
+@media (max-width: 431px) {
+  .container {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .input-row input,
+  .add-link-wrapper input {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .add-link-wrapper img {
+    left: 10px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .photo-box {
+    width: 90px;
+    height: 80px;
+  }
+
+  .section-title {
+    font-size: 16px;
+  }
+
+  .brand-heading {
+    font-size: 16px;
+  }
+
+  .step-circle {
+    width: 22px;
+    height: 22px;
+    font-size: 11px;
+  }
+}
+
+/* 361px and below */
+@media (max-width: 361px) {
+  .container {
+    padding: 16px;
+  }
+
+  .photo-box {
+    width: 80px;
+    height: 70px;
+  }
+
+  .save-btn {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .section-title {
+    font-size: 15px;
+  }
+
+  .step p {
+    font-size: 10px;
+  }
+
+  .step-circle {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Contact Details</title>
+  <link rel="stylesheet" href="form4.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <a href="../index.html" class="brand-heading">PortfolioHub</a>
+
+  <div class="container">
+    <!-- Steps Header -->
+    <div class="steps">
+      <p><strong>MAKE YOUR PORTFOLIO</strong></p>
+      <div class="step-indicators">
+        <div class="line"></div>
+        <div class="step">
+          <div class="step-circle">1</div>
+          Basic Details
+        </div>
+        <div class="step">
+          <div class="step-circle">2</div>
+          Skill & Experience
+        </div>
+        <div class="step active">
+          <div class="step-circle">3</div>
+          Contact Details
+        </div>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <form id="contactForm" novalidate>
+      <div class="section-title">Contact Details</div>
+
+      <div class="contact-row">
+        <div class="contact-input">
+          <label>Phone no.</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit Mobile Number" pattern="[0-9]{10}" maxlength="10" required />
+        </div>
+        <div class="contact-input">
+          <label>E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Type Here..." required />
+        </div>
+      </div>
+
+      <div class="social-input">
+        <label>GitHub</label>
+        <div class="input-wrapper">
+          <img src="https://img.icons8.com/ios-glyphs/20/3c29ff/link.png" />
+          <input type="url" name="github" placeholder="Add Link" />
+        </div>
+      </div>
+
+      <div class="social-input">
+        <label>LinkedIn</label>
+        <div class="input-wrapper">
+          <img src="https://img.icons8.com/ios-glyphs/20/3c29ff/link.png" />
+          <input type="url" name="linkedin" placeholder="Add Link" />
+        </div>
+      </div>
+
+      <div class="social-input">
+        <label>Instagram</label>
+        <div class="input-wrapper">
+          <img src="https://img.icons8.com/ios-glyphs/20/3c29ff/link.png" />
+          <input type="url" name="instagram" placeholder="Add Link" />
+        </div>
+      </div>
+
+      <div class="social-input">
+        <label>Facebook</label>
+        <div class="input-wrapper">
+          <img src="https://img.icons8.com/ios-glyphs/20/3c29ff/link.png" />
+          <input type="url" name="facebook" placeholder="Add Link" />
+        </div>
+      </div>
+
+      <button type="submit" class="save-btn">Submit</button>
+    </form>
+  </div>
+<script src="form4.js"></script>
+</body>
+</html>

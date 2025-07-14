@@ -285,3 +285,140 @@ body {
 .save-btn:hover {
   transform: scale(1.03);
 }
+
+
+/* === Responsive Media Queries === */
+
+/* For screens 1024px and below */
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .skill-pair {
+    width: 45%;
+  }
+}
+
+/* For screens 850px and below */
+@media (max-width: 850px) {
+  .skill-pair {
+    width: 100%;
+  }
+
+  .step-indicators {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .experience-row {
+    flex-direction: column;
+  }
+
+  .exp-duration .duration-inputs {
+    flex-direction: column;
+  }
+
+  .brand-heading {
+    font-size: 18px;
+    top: 12px;
+    left: 12px;
+  }
+}
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+  .container {
+    padding: 25px;
+  }
+
+  .section-title {
+    font-size: 18px;
+    margin: 20px 0 15px;
+  }
+
+  .step-circle {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
+
+  .line {
+    left: 10%;
+    right: 10%;
+  }
+}
+
+/* For screens 600px and below */
+@media (max-width: 600px) {
+  .step-indicators {
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .save-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+/* For screens 431px and below */
+@media (max-width: 431px) {
+  .container {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .skill-pair input,
+  .exp-input input,
+  .exp-duration input {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .section-title {
+    font-size: 16px;
+  }
+
+  .step-circle {
+    width: 22px;
+    height: 22px;
+    font-size: 11px;
+  }
+
+  .brand-heading {
+    font-size: 16px;
+  }
+}
+
+/* For very small screens like 361px and below */
+@media (max-width: 361px) {
+  .container {
+    padding: 16px;
+  }
+
+  .step p {
+    font-size: 10px;
+  }
+
+  .step-circle {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+
+  .save-btn {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .section-title {
+    font-size: 15px;
+  }
+}
+
