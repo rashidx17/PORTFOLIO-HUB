@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Skills & Experience</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="form2.css" />
+</head>
+<body>
+        <a href="../index.html" class="brand-heading">PortfolioHub</a>
+
+  <div class="container">
+    <!-- Steps Header -->
+    <div class="steps">
+      <p><strong>MAKE YOUR PORTFOLIO</strong></p>
+      <div class="step-indicators">
+        <div class="line"></div>
+        <div class="step">
+          <div class="step-circle">1</div>
+          Basic Details
+        </div>
+        <div class="step active">
+          <div class="step-circle">2</div>
+          Skills & Experience
+        </div>
+        <div class="step">
+          <div class="step-circle">3</div>
+          Verification
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="section-title">Skills</div>
+    <div class="skills-grid">
+      <div class="skill-pair">
+        <input type="text" placeholder="Skill Name">
+        <input type="text" placeholder="Description">
+      </div>
+      <div class="skill-pair">
+        <input type="text" placeholder="Skill Name">
+        <input type="text" placeholder="Description">
+      </div>
+      <div class="skill-pair">
+        <input type="text" placeholder="Skill Name">
+        <input type="text" placeholder="Description">
+      </div>
+      <div class="skill-pair">
+        <input type="text" placeholder="Skill Name">
+        <input type="text" placeholder="Description">
+      </div>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="section-title">Experience</div>
+
+    <!-- Experience Block 1 -->
+    <div class="experience-row">
+      <div class="exp-input">
+        <label>Role</label>
+        <input type="text" placeholder="e.g. Frontend Developer">
+      </div>
+      <div class="exp-input">
+        <label>Company</label>
+        <input type="text" placeholder="e.g. Google">
+      </div>
+      <div class="exp-duration">
+        <label>Duration</label>
+        <div class="duration-inputs">
+          <input type="text" placeholder="Start" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+          <input type="text" placeholder="End" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience Block 2 -->
+    <div class="experience-row">
+      <div class="exp-input">
+        <label>Role</label>
+        <input type="text" placeholder="e.g. Backend Developer">
+      </div>
+      <div class="exp-input">
+        <label>Company</label>
+        <input type="text" placeholder="e.g. Amazon">
+      </div>
+      <div class="exp-duration">
+        <label>Duration</label>
+        <div class="duration-inputs">
+          <input type="text" placeholder="Start" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+          <input type="text" placeholder="End" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience Block 3 -->
+    <div class="experience-row">
+      <div class="exp-input">
+        <label>Role</label>
+        <input type="text" placeholder="e.g. UI Designer">
+      </div>
+      <div class="exp-input">
+        <label>Company</label>
+        <input type="text" placeholder="e.g. Adobe">
+      </div>
+      <div class="exp-duration">
+        <label>Duration</label>
+        <div class="duration-inputs">
+          <input type="text" placeholder="Start" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+          <input type="text" placeholder="End" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+        </div>
+      </div>
+    </div>
+
+<button class="save-btn" onclick="window.location.href='form3.html';">
+  Save & Continue
+</button>
+
+  <script src="skills.js"></script>
+</body>
+</html>

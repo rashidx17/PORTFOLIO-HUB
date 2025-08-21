@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Internships</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="internships.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="../index.html" aria-label="Portfolio Hub Home">
+        <img src="../resources/logo.png" alt="Portfolio Hub" />
+      </a>
+      <div class="spacer"></div>
+      <nav class="nav-buttons" aria-label="Primary">
+        <a href="../index.html" class="btn">HOME</a>
+        <a href="../contact/contact.html" class="btn btn--filled">CONTACT US</a>
+      </nav>
+      <button id="menuBtn" class="hamburger" aria-label="Open filters" aria-controls="filters" aria-expanded="false">
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Overlay for drawer -->
+  <div id="drawerOverlay" class="drawer-overlay" hidden></div>
+
+  <main>
+    <div class="container">
+      <!-- Filters (single source of truth — becomes a drawer on small screens) -->
+      <div id="filters" class="filters" role="region" aria-label="Filters">
+        <div class="drawer-header">
+          <div class="drawer-title">Filters</div>
+          <button id="closeDrawer" class="drawer-close" aria-label="Close filters">Close</button>
+        </div>
+        <select id="workType" aria-label="Work type">
+          <option value="">Work type</option>
+          <option>Remote</option>
+          <option>Hybrid</option>
+          <option>Onsite</option>
+        </select>
+        <select id="experience" aria-label="Experience">
+          <option value="">Experience</option>
+          <option>Fresher</option>
+          <option>Intermediate</option>
+          <option>Expert</option>
+        </select>
+        <select id="role" aria-label="Role">
+          <option value="">Role</option>
+          <option>UI/UX Designer</option>
+          <option>Data Analyst</option>
+          <option>Developer</option>
+        </select>
+        <select id="stipend" aria-label="Salary">
+          <option value="">Salary</option>
+          <option>2000 and below</option>
+          <option>5000 and below</option>
+          <option>10000 and below</option>
+          <option>More than 10000</option>
+        </select>
+        <select id="duration" aria-label="Duration">
+          <option value="">Duration</option>
+          <option>1 month</option>
+          <option>2 months</option>
+          <option>3 months</option>
+          <option>4 months</option>
+          <option>5 months</option>
+          <option>6 months</option>
+          <option>7 months</option>
+          <option>8 months</option>
+          <option>9 months</option>
+          <option>10 months</option>
+          <option>11 months</option>
+          <option>12 months</option>
+        </select>
+      </div>
+
+      <!-- Job Listings -->
+      <div class="job-listings" id="jobList">
+        <article class="job-card">
+          <h2 class="job-title">UI/UX Designer for Mobile App</h2>
+          <div class="job-meta">₹5,000 • 3 months • Hybrid • Intermediate</div>
+          <p class="job-desc">Looking for a creative UI/UX Designer to enhance user experience for our mobile application. Must possess strong design skills and experience with prototyping tools.</p>
+          <div class="skills">
+            <span class="skill">Figma</span>
+            <span class="skill">User Research</span>
+            <span class="skill">Wireframing</span>
+            <span class="skill">Prototyping</span>
+          </div>
+          <div class="location">📍 Gwalior</div>
+        </article>
+
+        <article class="job-card">
+          <h2 class="job-title">Data Analyst for Marketing Team</h2>
+          <div class="job-meta">₹60,000 • 1 year • Remote • Fresher</div>
+          <p class="job-desc">We need a Data Analyst to help drive insights for our marketing efforts. The candidate should be proficient in data visualization tools and statistical analysis.</p>
+          <div class="skills">
+            <span class="skill">SQL</span>
+            <span class="skill">Tableau</span>
+            <span class="skill">Data Mining</span>
+            <span class="skill">Predictive Analytics</span>
+          </div>
+          <div class="location">📍 Delhi</div>
+        </article>
+
+        <!-- Example extra cards for grid preview -->
+        <article class="job-card">
+          <h2 class="job-title">Frontend Developer (React)</h2>
+          <div class="job-meta">₹35,000 • 6 months • Onsite • Intermediate</div>
+          <p class="job-desc">Build responsive web interfaces and collaborate with designers to ship polished features. Prior experience with state management is a plus.</p>
+          <div class="skills">
+            <span class="skill">React</span>
+            <span class="skill">TypeScript</span>
+            <span class="skill">Redux</span>
+          </div>
+          <div class="location">📍 Pune</div>
+        </article>
+
+        <article class="job-card">
+          <h2 class="job-title">Backend Engineer (Node.js)</h2>
+          <div class="job-meta">₹45,000 • 6 months • Hybrid • Expert</div>
+          <p class="job-desc">Design APIs, own performance, and ship reliable services. Experience with SQL/NoSQL databases and cloud deployments preferred.</p>
+          <div class="skills">
+            <span class="skill">Node.js</span>
+            <span class="skill">PostgreSQL</span>
+            <span class="skill">Docker</span>
+          </div>
+          <div class="location">📍 Bengaluru</div>
+        </article>
+      </div>
+    </div>
+  </main>
+  <script src="internships.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="profile.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <span class="qq">Welcome</span>
+                 <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times"></i>
+                 </ul>
+                <i class="fas fa-bars"></i>
+            </nav>
+
+            <div class="header-text">
+                <p><span id="typer">Frontend Developer</p>
+                <h1>Hi, I'm <span>Rashid</span><br> from  Jhansi</h1>
+                <img src="../resources/IMG_4157.jpg"  alt="">
+            </div>
+            <div id="resume-btn">
+                <a href="../resources/RASHID resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div id="cursor"></div>
+    <div id="cursorblur"></div>
+
+    <!-- ----------ABOUT---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+             <div class="about-col-1" data-aos="fade-right">
+                    <img src="../resources/img2.jpg">
+                </div>
+                <div class="about-col-2" data-aos="fade-left">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi! I'm Rashid, a passionate web developer with a strong foundation in front-end development. I recently completed a comprehensive web development course, where I honed my skills in HTML, CSS, JavaScript. I thrive on building responsive, user-friendly websites and applications that solve real-world problems and deliver great user experiences.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Front-end Web app Development</li>
+                            <li><span>Video Editing</span><br>Good Command in Capcut Pro and Premiere Pro</li>
+                            <li><span>Excel</span><br>Efficient in Excel for daily business tasks</li>
+                            <li><span>Graphic Designing</span></br>Proficient in Canva for social media and branding</li>
+                               
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>B.Tech at SRGI, Jhansi</li>
+                            <li><span>2024 - Aug-Sep</span><br>Intership at YHills</li>
+                            <li><span>2024 - May-July</span><br>Intership at YELO-India (Front-end Developer)</li>
+                         </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>10th at DBC, Jhansi with 88%</li>
+                            <li><span>2020</span><br>12th at MHMS, Jhansi with 70% </li>
+                            <li><span>2026</span><br>B.Tech (CSE) at SRGI, Jhansi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------SERVICES---------- -->
+    <!-- <section id="services">
+    <div class="container">
+      <h1 class="sub-title" data-aos="zoom-in">What I Offer</h1>
+      <div class="services-list">
+        <div data-aos="flip-left">
+          <i class="fa-solid fa-video"></i>
+          <h2>Video Editing</h2>
+          <p>Captivating stories from raw clips using VN & Capcut Pro with cinematic touch.</p>
+          <a href="https://www.linkedin.com/in/rashidx17/">Explore More</a>
+        </div>
+        <div data-aos="flip-up">
+          <i class="fa-solid fa-code"></i>
+          <h2>Frontend Development</h2>
+          <p>Beautiful, mobile-first designs using HTML, CSS, and JavaScript.</p>
+          <a href="https://www.linkedin.com/in/rashidx17/">Explore More</a>
+        </div>
+        <div data-aos="flip-right">
+          <i class="fa-solid fa-hashtag"></i>
+          <h2>Social Media</h2>
+          <p>Engaging content creation and branding strategies tailored for modern platforms.</p>
+          <a href="https://www.linkedin.com/in/rashidx17/">Explore More</a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+    <!-- ----------PORTFOLIO--------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="../resources/Screenshot (35).png" alt="image not found">
+                    <div class="layer">
+                        <h2>Plant Website</h2>
+                        <p>Visit my Plant Website made solely by me to see my work</p>
+                        <a href="https://rashidx17.github.io/The-Rubber-Plant/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../resources/img4.png" alt="image not found">
+                    <div class="layer">
+                        <h2>Apparel Store Website</h2>
+                        <p>Visit my very own Apparel Store Website designed using Html and bootstrap only</p>
+                        <a href="https://rashidx17.github.io/Apparel-Store/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../resources/Screenshot (31).png" alt="Coming soon">
+                    <div class="layer">
+                        <h2>Video Editing</h2>
+                        <p>Transforming raw footage into dynamic visual stories with precision, creativity, and seamless transitions.</p>
+                        <a href="https://www.instagram.com/reel/C8oviJFNg5y/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <a href="https://www.linkedin.com/in/rashidx17/" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ----------CONTACT---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>17rashidx@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+91 7518553177</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/17__rashid"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/exertix_"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rashidx17/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="../resources/RASHID resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="5316876f-8f78-4cfb-9446-9d42bf567517">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @rashidx17<i class="fas fa-heart"></i> by </p>
+        </div>
+    </div>
+
+
+ 
+<!-- SCRIPTS -->
+  <script src="profile.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ once: true, duration: 1000 });</script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+</body>
+
+</html>

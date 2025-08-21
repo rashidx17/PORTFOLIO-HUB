@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <a href="../index.html" class="brand-heading">PortfolioHub</a>
+
+  <div class="container">
+    <!-- Steps -->
+    <div class="steps">
+      <p><strong>MAKE YOUR PORTFOLIO</strong></p>
+      <div class="step-indicators">
+        <div class="line"></div>
+        <div class="step active">
+          <div class="step-circle">1</div>
+          Basic Details
+        </div>
+        <div class="step">
+          <div class="step-circle">2</div>
+          Contact Details
+        </div>
+        <div class="step">
+          <div class="step-circle">3</div>
+          Verification
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">Basic Details</div>
+
+    <!-- Photo Upload -->
+    <div class="photo-upload">
+      <div class="photo-preview" id="previewContainer">
+        <img id="photoIcon" src="https://img.icons8.com/ios-filled/50/ffffff/user-male-circle.png" alt="icon">
+      </div>
+      <input type="file" id="photoInput" accept="image/*">
+      <label for="photoInput">Add Photo</label>
+    </div>
+
+    <!-- Full Name -->
+    <div class="form-group">
+      <label>Full Name</label>
+      <input type="text" id="fullName" placeholder="Enter your full name">
+    </div>
+
+    <!-- Role -->
+    <div class="form-group">
+      <label>Role</label>
+      <input type="text" id="role" placeholder="Type Here....">
+    </div>
+
+    <!-- City + Resume -->
+    <div class="form-row">
+      <div>
+        <label>City</label>
+        <input type="text" id="city" placeholder="Type Here....">
+      </div>
+      <div>
+        <label>Upload Resume</label>
+        <input type="file" accept="application/pdf">
+      </div>
+    </div>
+
+    <!-- DOB + Gender -->
+    <div class="form-row">
+      <div>
+        <label>Date Of Birth</label>
+        <input type="text" id="dob" class="date-fake" placeholder="dd/mm/yyyy" onfocus="this.type='date'">
+      </div>
+      <div>
+        <label>Gender</label>
+        <div class="gender-options">
+          <label><input type="radio" name="gender" value="Male"> Male</label>
+          <label><input type="radio" name="gender" value="Female"> Female</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Me -->
+    <div class="form-group">
+      <label>About Me</label>
+      <textarea id="aboutMe" rows="2" placeholder="Type Here...."></textarea>
+    </div>
+
+    <!-- Education -->
+    <div class="form-group">
+      <label>Education</label>
+      <div class="education-container">
+        <!-- Block 1 (Required) -->
+        <div class="education-block">
+          <div class="education-input">
+            <label>Degree</label>
+            <input type="text" id="eduDegree" placeholder="e.g. B.Tech">
+          </div>
+          <div class="education-input">
+            <label>College/University</label>
+            <input type="text" id="eduCollege" placeholder="e.g. AKTU">
+          </div>
+          <div class="education-input">
+            <label>Graduation Year</label>
+            <input type="text" id="eduYear" placeholder="e.g. 2026">
+          </div>
+        </div>
+
+        <!-- Block 2 -->
+        <div class="education-block">
+          <div class="education-input">
+            <input type="text" placeholder="e.g. Intermediate">
+          </div>
+          <div class="education-input">
+            <input type="text" placeholder="e.g. KV No.1 Jhansi">
+          </div>
+          <div class="education-input">
+            <input type="text" placeholder="e.g. 2022">
+          </div>
+        </div>
+
+        <!-- Block 3 -->
+        <div class="education-block">
+          <div class="education-input">
+            <input type="text" placeholder="e.g. Intermediate">
+          </div>
+          <div class="education-input">
+            <input type="text" placeholder="e.g. KV No.1 Jhansi">
+          </div>
+          <div class="education-input">
+            <input type="text" placeholder="e.g. 2022">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Save Button -->
+    <button class="save-btn" id="saveBtn">Save & Continue</button>
+  </div>
+
+  <script src="form.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intern Signup</title>
+  <link rel="stylesheet" href="intern signup.css" />
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+  <div id="page-wrapper">
+    <!-- Left Form Section -->
+    <div id="form-side">
+      <a id="logo" href="../index.html">
+       <img src="../resources/logo.png" alt="PortfolioHub Logo">
+      </a>
+      <div id="recruit">
+      <h1 id="form-title">Create an Account</h1>
+      <p>Do you want to signup as recruiter  <a href="../recruiter signup/recruit signup.html">Click here</a></p>
+      </div>
+      <p id="form-subtitle">One more action and you'll be exactly where you want to be.</p>
+
+      <form id="signup-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name here" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="name@gmail.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="password-wrap">
+            <input type="password" id="password" placeholder="********" required />
+            <i class="ri-eye-fill" id="toggle-password"></i>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="confirm">Confirm Password</label>
+          <div class="password-wrap">
+            <input type="password" id="confirm" placeholder="********" required />
+            <i class="ri-eye-fill" id="toggle-confirm"></i>
+          </div>
+        </div>
+  
+        <button id="register-btn" type="submit">Register as Intern</button>
+
+        <div id="or-line">Or Register With</div>
+
+        <div id="social-buttons">
+          <button id="github-btn"><i class="ri-github-fill"></i> GitHub</button>
+          <button id="google-btn"><i class="ri-google-fill"></i> Google</button>
+          <button id="mobile-btn"><i class="ri-smartphone-line"></i> Phone</button>
+        </div>
+
+        <p id="signin-link">Already Have An Account? <a href="../login/login.html">Login</a></p>
+      </form>
+    </div>
+
+    <!-- Right Side Image -->
+    <div id="image-side"></div>
+  </div>
+
+  <script src="intern signup.js"></script>
+</body>
+</html>
